@@ -9,7 +9,12 @@ let newPrice = document.getElementById("midder");
 let services = [];
 services.push(serviceName.value)
 button.addEventListener('click',(ev)=>{
-   let service = localStorage.getItem("count")
+    let count = Number(localStorage.getItem("count"))
+    // console.log(count);
+    // console.log(typeof(count))
+   let service = localStorage.getItem(JSON.parse(`new service${count}`))
+   services.push(service)
+   console.log(service);
    console.log(services);
    services.map((items)=>{
        console.log(services);
@@ -18,7 +23,10 @@ button.addEventListener('click',(ev)=>{
            items.filter((services)=>{
             console.log(services.unitPrice);
             console.log(services.serviceName);
-               services.unitPrice = newPrice
+            services.unitPrice = newPrice;
+            let updatedService = service;
+            localStorage.removeItem(`new service${count}`)
+            localStorage.setItem(`new service${count}`,JSON.stringify(updatedService))
            })
        }
    })
