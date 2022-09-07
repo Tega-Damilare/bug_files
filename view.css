@@ -55,7 +55,7 @@
     height: 17.5em;
     text-align: left;
 }
-#linkDiv>button{
+/* #linkDiv>button{
     color: #915E5D; 
     background-color: #FFFFFF;
     border: #FFFFFF;
@@ -66,12 +66,12 @@
     width: 6em;
     font-size: small;
     font-weight: 790;
-}
-#linkDiv>p{
-    font-size: xx-small;
+} */
+/* #linkDiv>p{
+    font-size: small;
     font-family: Arial, Helvetica, sans-serif;  
     font-weight: bolder;
-}
+} */
 
 #direct{
     text-align: center;
@@ -144,6 +144,15 @@ a:active{
  }
  
  table,td,tr{
-    border: white 2px;
-    padding: 5px;
+    border: 2px solid white;
+    /* padding: 5px; */
+ }
+ table{
+    width: 20em;
+    height: max-content;
+    border-collapse: collapse;
+    color: black;
+ }
+ td{
+    height: 2em;
  }
