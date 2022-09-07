@@ -1,7 +1,7 @@
 // get the elements from html
 let yellow = document.getElementById("linkDiv")
 let table = document.getElementById('table');
-let tr = document.createElement('tr');
+// let tr = document.createElement('tr');
 let tableplace = document.getElementById('tableDiv');
 let count = Number(localStorage.getItem("count"))
 console.log(typeof(count));
@@ -24,15 +24,15 @@ for(let i=0; i<count - 1; i++){
             let td1 = document.createElement('td')
            
             
-            td1.value = service.unitPrice
-            td.value = service.serviceName
-            console.log(td.value);
-            console.log(td1.value);
+            td1.innerHTML = service.unitPrice
+            td.innerHTML = service.serviceName
+            console.log(td);
+            console.log(td1);
 
             tr.append(td);
             tr.append(td1);
         
         table.append(tr);
-        body.append(table);
+        // body.append(table);
         
     }
