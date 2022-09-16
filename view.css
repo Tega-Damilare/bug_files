@@ -152,7 +152,8 @@ a:active{
     height: max-content;
     border-collapse: collapse;
     color: black;
+    margin: 70px;
+    width: 250px;
+    text-align: center;
  }
- td{
-    height: 2em;
- }
+ 

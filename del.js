@@ -1,17 +1,25 @@
-// Get the button element from update.html
-// Get the service name typed from local storage
-// edit the price and update the new price
+/*
+get the delser from html by id 
+and store it as  delServ
+get count from the local storage as a number
+loop through the local storage and get each service
+get the delete delser from html
+add a click event listener to the delete delser
+so as to check if the value of deleteServ is eaqual to 
+the service name 
+if condition is true 
+it should remove the service from local storage
+*/
 
 
-let button = document.getElementById("saveBtn");
+let serviceType;
+let delser = document.getElementById("delBtn");
 let serviceName = document.getElementById("serviceName");
 // let newPrice = document.getElementById("midder");
 let newPrice = document.getElementById("inpt");
 let services = [];
-services.push(serviceName.value)
-button.addEventListener('click',(ev)=>{
-    let price = newPrice.value
-    let serviceType = serviceName.value
+let service
+delser.addEventListener('click',(ev)=>{
     let count = Number(localStorage.getItem("count"));
     console.log(count)
      console.log(count);
@@ -20,8 +28,12 @@ button.addEventListener('click',(ev)=>{
     
       for(let i = 0;i<count;i++){
           console.log(count)
-          let service = JSON.parse(localStorage.getItem((`new service${i}`)))
+           service = JSON.parse(localStorage.getItem((`new service${i}`)))
           console.log(service);
+          services.push(service.serviceName)
+           serviceType = service.serviceName
+
+
       }
 
     //loop through the localstorage
@@ -29,7 +41,7 @@ button.addEventListener('click',(ev)=>{
       console.log(count)
       let service = JSON.parse(localStorage.getItem((`new service${i}`)))
       services.push(service)
-      console.log((((services[i].serviceName))));
+      console.log((((services.serviceName))));
       console.log(serviceType)
  
         console.log(services);
@@ -42,44 +54,14 @@ button.addEventListener('click',(ev)=>{
                 console.log('i was here')
                 console.log(service.unitPrice);
                 console.log(service.serviceName);
-                service.unitPrice = price;
+                localStorage.removeItem(`new service${i}`)
                 console.log(service);
                 // let updatedService = service;
                 // localStorage.removeItem(`new service${count}`)
                 // localStorage.setItem(`new service${count}`,JSON.stringify(updatedService))
-            };
-        })
+            }
+       })
     }    
 
    ev.preventDefault();
 })
-
-
-class Animal {
-    constructor(name,size,age,color) {
-      this.name = name;
-      this.size = size;
-      this.age = age;
-      this.color = color
-    }
-  
-    speak() {
-      console.log(`${this.name} makes a noise.`);
-    }
-  }
-  
-  class Dog extends Animal {
-    constructor(name,size,age,color) {
-      super(name,size,age,color); // call the super class constructor and pass in the name parameter
-    
-    }
-  
-    // speak() {
-    //   console.log(`${this.name} barks.`);
-    // }
-  }
-  
-  let dog1 = new Dog('bingo',12,2,'white')
-  console.log(dog1.speak())
-
-  

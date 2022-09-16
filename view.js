@@ -1,4 +1,6 @@
 // get the elements from html
+
+let style = document.createAttribute('style')
 let yellow = document.getElementById("linkDiv")
 let table = document.getElementById('table');
 // let tr = document.createElement('tr');
@@ -12,7 +14,7 @@ let body = document.getElementById('bd');
 
 
 // creates the rows
-for(let i=0; i<count - 1; i++){
+for(let i=0; i<count; i++){
         let service = JSON.parse(localStorage.getItem( `new service${i}`))
         console.log(service);
         console.log(typeof(service));
@@ -23,7 +25,8 @@ for(let i=0; i<count - 1; i++){
             let td = document.createElement('td');
             let td1 = document.createElement('td')
            
-            
+            td1.style.borderRightColor = "#D4D709"
+            td.style.borderLeftColor = "#D4D709"
             td1.innerHTML = service.unitPrice
             td.innerHTML = service.serviceName
             console.log(td);

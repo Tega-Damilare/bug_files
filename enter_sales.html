@@ -19,26 +19,20 @@
         <p id="justToPush">cooool</p>
         <p class="brownish">SERVICE RENDERD</p>
         <form>
-             <select name="rendered" class="rendered">
-                <option value="desktop">Desktop Publishing</option>
-                <option value="coding">Printing</option>
-                <option value="internet">Internet Services</option>
-                <option value="networking">Networking</option>
-                <option value="ict">ICT training</option>
-            </select>
-            <p class="brownish">UNIT PRICE</p>
-            <input type="number" class="rendered">
+             <select name="rendered" class="rendered" id="allSales"></select>
+            <p class="brownish" id="price">UNIT PRICE</p>
             <p class="brownish">QUANTITY</p>
-            <input type="number" class="rendered">
-            <p class="brownish">DISCOUNTS</p>
-            <input type="number" class="rendered">
-            <p class="brownish">TOTAL</p>
-            <input type="number" class="rendered">
+            <input type="number" class="rendered" id="qty">
+            <p class="brownish" >DISCOUNTS</p>
+            <input type="number" class="rendered" id="disc">
+            <p class="brownish" id="total">TOTAL</p>
+            <button id="calc">Calculate</button>
         </form>
     </div>
     <div id="whiteDive">
         <p id="toEdit">cool</p>
-        <button>SAVE</button>
+        <button id="save">SAVE</button>
     </div>
+<script src="sales.js"></script>
 </body>
 </html>
