@@ -4,18 +4,20 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 #header{
-    background-image: url(../mobile_view/pics/Capture001.png);
+    background-image: url(brain.png);
     background-size: cover;
     text-align: center;
     background-repeat: no-repeat;
     align-content: right;
     margin-top: -40px;
+    height: 5em;
 }
 #software{
     color: #000045;
     font-family: Arial, Helvetica, sans-serif;
     font-size: x-large;
     font-weight: bolder;
+    height: 30px;
 }
 #software+p{
     color: darkred;
@@ -27,23 +29,23 @@
 }
 #companyName{
     background-color: white;
-    font-size: x-large;
+    font-size: xx-large;
     text-align: left;
     padding-left: 0.75em;
-    height: 3.5em;
+    height: 5em;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     display: grid;
     grid-template: 
     "text            logo" 1fr
-    /1.5fr            0.5fr
+    /7.5fr            3fr
     ;
     grid-area: "text";
 }
 #logo{
     align-self: right;
     width: 6em;
-    height: 2.2em;
+    height: 3.85em;
     grid-area: "logo";
 }
 #linkDiv{
@@ -125,4 +127,140 @@ a:active{
      font-weight: lighter;
      text-align: center;
  }
- 
+#arrow{
+    margin-right: 300px;
+    font-size: 20px;
+} 
+@media screen and (min-width: 1000px){
+    #header{
+        background-image: url(brain.png);
+        background-size: cover;
+        text-align: center;
+        background-repeat: no-repeat;
+        align-content: right;
+        margin-top: -40px;
+    }
+    #software{
+        color: #000045;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 70000px !important;
+        font-weight: bolder;
+    }
+    #software+p{
+        color: darkred;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: bolder;
+        font-size: 1em;
+        text-align: left;
+        margin-left: 4em;
+    }
+    #companyName{
+        background-color: white;
+        font-size: x-large;
+        text-align: left;
+        padding-left: 0.75em;
+        height: 3.5em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        display: grid;
+        grid-template: 
+        "text            logo" 1fr
+        /1.5fr            0.5fr
+        ;
+        grid-area: "text";
+    }
+    #logo{
+        align-self: right;
+        width: 6em;
+        height: 2.2em;
+        grid-area: "logo";
+    }
+    #linkDiv{
+        background-color: #D4D709;
+        color: #000000;
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 0;
+        height: 17.5em;
+        text-align: left;
+    }
+    #linkDiv>button{
+        color: #915E5D; 
+        background-color: #FFFFFF;
+        border: #FFFFFF;
+        font-size: 0.5em;
+        margin-bottom: 0.99em;
+        font-size: 0.7em;
+        border-radius: 9.5px;
+        width: 6em;
+        font-size: small;
+        font-weight: 790;
+    }
+    #linkDiv>p{
+        font-size: xx-small;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+    }
+    
+    #direct{
+        text-align: center;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+    }
+    #direct+button{
+        margin-left: 50%;
+        margin-top: .5em;
+        font-family: Arial, Helvetica, sans-serif; 
+        background-color: #D4D709;
+        font-weight: 700;
+        font-size: x-large;
+        border-radius: 9.5px;
+        border-color: #FFFFFF;
+        box-shadow: none;
+        padding: 0.2em;
+        height: 50px;
+        width: 100px;
+    }
+    a{
+        text-decoration: none;
+        color: #915E5D;
+    }
+    a:active{
+        color:red;
+    }
+    .brownish{ 
+         color: #915E5D; 
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: .65em; 
+         margin-left: 1em; 
+         margin-left: 500px;
+         font-weight: bold;
+    }
+    .rendered{ 
+         align-self: right; 
+         margin-left: 500px; 
+         width: 12em; 
+         height: 2em;
+         border-radius: .5em;
+         border: #FFFFFF;
+         text-align: center;
+         font-weight: bolder;
+         font-size: x-large;
+         margin-bottom: 1em;
+     } 
+     form{ 
+         display: grid;
+     }
+     #daily{
+         font-weight: lighter;
+         text-align: center;
+     }
+    #arrow{
+        margin-right: 3000px;
+        font-size: 100px;
+    } 
+    #fetch{
+        width: 250px;
+    }
+}

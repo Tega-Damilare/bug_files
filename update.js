@@ -2,7 +2,7 @@
 // Get the service name typed from local storage
 // edit the price and update the new price
 
-
+let button2 = document.getElementById("delete")
 let button = document.getElementById("saveBtn");
 let serviceName = document.getElementById("serviceName");
 // let newPrice = document.getElementById("midder");
@@ -52,6 +52,55 @@ button.addEventListener('click',(ev)=>{
     }    
 
    ev.preventDefault();
+})
+
+button2.addEventListener('click',(ev)=>{
+  // let price = newPrice.value
+  let serviceType = serviceName.value
+  let count = Number(localStorage.getItem("count"));
+  console.log(count)
+   console.log(count);
+ console.log(typeof(count))
+
+  
+    for(let i = 0;i<count;i++){
+        console.log(count)
+        let service = JSON.parse(localStorage.getItem((`new service${i}`)))
+        console.log(service);
+    }
+
+  //loop through the localstorage
+  for(let i = 0;i<count;i++){
+    console.log(count)
+    let service = JSON.parse(localStorage.getItem((`new service${i}`)))
+    services.push(service)
+    console.log((((services[i].serviceName))));
+    console.log(serviceType)
+
+      console.log(services);
+      // services.map((items)=>{
+      //     console.log(services);
+      //     console.log(items);
+      services.filter((service)=>{
+
+          if (service.serviceName === serviceType) {
+              console.log('i was here')
+              console.log(service.unitPrice);
+              console.log(service.serviceName);
+              for (let i = 0; i < count; i++) {
+                localStorage.removeItem(`new service${i}`);
+                
+              }
+              // service.unitPrice = price;
+              // console.log(service);
+              // let updatedService = service;
+              // localStorage.removeItem(`new service${count}`)
+              // localStorage.setItem(`new service${count}`,JSON.stringify(updatedService))
+          };
+      })
+  }    
+
+ ev.preventDefault();
 })
 
 
