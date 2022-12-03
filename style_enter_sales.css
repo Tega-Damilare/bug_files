@@ -207,8 +207,9 @@ a:active{
         margin-left: 25em;
     }
     #arrow{
-        font-size: 100px;
-    }
+        margin-right: 3000px;
+        font-size: 75px;
+    } 
     #biggy{
         margin-left: 500px !important;
     }

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REPORT</title>
-    <link rel="stylesheet" href="style_enter_sales.css">
+    <title>VIEW SERVICES</title>
+    <link rel="stylesheet" href="view.css">
     <script src="https://kit.fontawesome.com/26c3313c7a.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="bd">
     <p id="companyName">Binasoft <img src="though_guys.png" alt="Binasoft's logo" id="logo"> </p>
     <div id="header">
         <a href="home.html"><i class="fa-solid fa-circle-arrow-left fa-bounce" id="arrow"></i></a>
@@ -18,14 +18,18 @@
     </div>
         </div>
     <div id="linkDiv">
-        <p id="justToPush">COOOL</p>
-        <p class="brownish">REPORT PAGE</p>
-        <textarea name="biggy" id="biggy" cols="30" rows="10" style="padding: 10px;" ></textarea>
+        
+        <table id="table">
+            <tr>
+                <thead>
+                    <th id="noLeft">services</th>
+                    <th id="noRight">amount</th>
+                </thead>
+                
+            </tr>
+        </table>
+    
     </div>
-    <div id="whiteDiv">
-        <p style="color: white;" id="deal">COOOL</p>
-        <button id="sub">Submit</button>
-    </div>
-<script src="report.js"></script>
+  <script src="view.js"></script>
 </body>
 </html>

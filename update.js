@@ -44,9 +44,9 @@ button.addEventListener('click',(ev)=>{
                 console.log(service.serviceName);
                 service.unitPrice = price;
                 console.log(service);
-                // let updatedService = service;
-                // localStorage.removeItem(`new service${count}`)
-                // localStorage.setItem(`new service${count}`,JSON.stringify(updatedService))
+                 let updatedService = service;
+                 localStorage.removeItem(`new service${count}`)
+                 localStorage.setItem(`new service${count}`,JSON.stringify(updatedService))
             };
         })
     }    

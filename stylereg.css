@@ -173,9 +173,9 @@ a:active{
         font-size: xx-large;
     }
     #arrow{
-        font-size: 100px;
-        margin-right: 2000px;
-    }
+        margin-right: 3000px;
+        font-size: 75px;
+    } 
     #midder{
         margin-left: 50%;
     }

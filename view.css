@@ -162,5 +162,9 @@ a:active{
         margin-left: 30%;
         font-size: 1.2em;
     }
+    #arrow{
+        margin-right: 3000px;
+        font-size: 75px;
+    } 
   
  }
